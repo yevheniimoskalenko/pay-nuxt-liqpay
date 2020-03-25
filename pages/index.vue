@@ -5,6 +5,8 @@
     </el-form-item>
     <el-form-item>
       <el-button @click="OnSubmit" type="primary" round :loading="loading">Pay</el-button>
+
+      <div v-html="form"></div>
     </el-form-item>
   </el-form>
 </template>
@@ -18,6 +20,7 @@ export default {
   data() {
     return {
       loading: false,
+      form: "",
       controls: {
         amount: 0
       }
@@ -26,14 +29,17 @@ export default {
   methods: {
     OnSubmit() {
       this.$refs.form.validate(async valid => {
+        this.loading = true;
         const formData = {
           amount: this.controls.amount
         };
         try {
           await this.$store.dispatch("payAmount", formData);
+          this.form = this.$store.state.form;
         } catch (e) {
           console.log(e);
         }
+        this.loading = false;
       });
     }
   }
