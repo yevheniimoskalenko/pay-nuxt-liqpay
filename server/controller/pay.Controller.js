@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     const html = liqpay.cnb_form({
         'action': 'pay',
         'amount': amount,
-        'currency': 'USD',
+        'currency': 'UAH',
         'description': 'description text',
         'order_id': 'order_id_2',
         'version': '3'

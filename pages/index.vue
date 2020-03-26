@@ -1,14 +1,16 @@
 <template>
-  <el-form :model="controls" ref="form">
-    <el-form-item label="На сколько вы хотите пополнить ваш счёт?">
-      <el-input v-model.number="controls.amount" placeholder="Введите сумму" value="number"></el-input>
-    </el-form-item>
-    <el-form-item>
-      <el-button @click="OnSubmit" type="primary" round :loading="loading">Pay</el-button>
-
-      <div v-html="form"></div>
-    </el-form-item>
-  </el-form>
+  <div>
+    <el-form :model="controls" ref="form">
+      <el-form-item label="На сколько вы хотите пополнить ваш счёт?">
+        <el-input v-model.number="controls.amount" placeholder="Введите сумму" value="number"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button @click="OnSubmit" type="primary" round :loading="loading">Pay</el-button>
+        {{form}}
+      </el-form-item>
+    </el-form>
+    <div v-html="form"></div>
+  </div>
 </template>
 
 <script>
