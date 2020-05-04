@@ -17,13 +17,18 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
+    "js-base64": "^2.5.2",
     "liqpay-sdk": "^3.2.0",
     "liqpayjs-sdk": "^3.3.1",
-    "nuxt": "^2.0.0"
+    "mongoose": "^5.9.11",
+    "nuxt": "^2.0.0",
+    "sha1": "^1.1.1"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
