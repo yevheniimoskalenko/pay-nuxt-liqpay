@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       loading: false,
-      form: '',
+      form: null,
       controls: {
         amount: 0
       }
@@ -43,9 +43,7 @@ export default {
         try {
           await this.$store.dispatch('payAmount', formData)
           this.form = this.$store.state.form
-        } catch (e) {
-          console.log(e)
-        }
+        } catch (e) {}
         this.loading = false
       })
     }
