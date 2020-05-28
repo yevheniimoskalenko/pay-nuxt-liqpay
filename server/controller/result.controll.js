@@ -1,11 +1,9 @@
-const LiqPay = require('liqpayjs-sdk');
 const Base64 = require('js-base64').Base64;
 const Pay = require('../model/pay.model')
 
 const sha1 = require('sha1')
 module.exports = (req, res) => {
   const private_key = "sandbox_FYJPFYbeddSheWm20U31UPdgZ6mnpmXnLsTGRemV"
-  const public_key = "sandbox_i60561439950"
   const {
     signature,
     data
@@ -23,7 +21,6 @@ module.exports = (req, res) => {
 
     })
     pay.save();
-    // console.log(dae)
-    //    const {payment_id,status,} = datas
   }
+  return res.json("OK")
 }
