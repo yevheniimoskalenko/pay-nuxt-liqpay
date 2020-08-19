@@ -1,6 +1,6 @@
 # pay-nuxt-liqpay
 
-> pay liqpay
+> Прием платежей liqpay на своем сайте с помощью vue(vuex, nuxt) node.js
 
 ## Build Setup
 
