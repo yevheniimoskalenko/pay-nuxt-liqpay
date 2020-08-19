@@ -1,6 +1,7 @@
 # pay-nuxt-liqpay
-# ![RealWorld Example App](./assets/2.png)
-> Прием платежей liqpay на своем сайте с помощью vue(vuex, nuxt) node.js
+# ![form for pay](./assets/2.png)
+# ![form for liqpay](./assets/21.png)
+> Прием платежей liqpay на своем сайте с помощью vue(vuex, nuxt) node.js(express)
 
 ## Build Setup
 
