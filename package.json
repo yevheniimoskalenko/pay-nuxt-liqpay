@@ -26,7 +26,7 @@
     "js-base64": "^2.5.2",
     "liqpay-sdk": "^3.2.0",
     "liqpayjs-sdk": "^3.3.1",
-    "mongoose": "^5.9.11",
+    "mongoose": "^5.13.15",
     "nuxt": "^2.0.0",
     "sha1": "^1.1.1"
   },
